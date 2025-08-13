@@ -1,3 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numenorean Trip!</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            background-color: #f4ede4;
+            color: #333;
+        }
+        #map {
+            height: 80vh;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h3 {
+            text-align: center;
+        }
+        #summaries {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+        }
+        .summary-card {
+            background-color: #5E8C61;
+            border-radius: 12px;
+            padding: 10px 15px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            cursor: pointer;
+            max-width: 300px;
+            transition: transform 0.2s;
+        }
+        .summary-card:hover {
+            background-color: #76a879;
+            transform: scale(1.05);
+        }
+        .stats-card {
+            background-color: #406c44;
+        }
+    </style>
+</head>
 <body>
     <h2>Numenorean Trip!</h2>
     <div id="map"></div>
@@ -130,3 +181,4 @@ In the afternoon the sun peeks through some lighter clouds and the rain abates. 
     </script>
 
 </body>
+</html>
